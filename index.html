@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="display">
+            <header>
+                <div class="search">
+                    <input type="text" name="search" id="searchBar" placeholder="Search by city name...">
+                    <img src="./img/search.png" alt="search-icone">
+                </div>
+            </header>
+            <div class="timeDate">
+                <div class="date">
+                    <p id="date">11-May-2024</p>
+                </div>
+                <div class="time">
+                    <p id="time">10:00:00 AM</p>
+                </div>
+            </div>
+            <div class="curTemp">
+                <img src="./img/rain.png" alt="">
+                <h1><span id="currentTemp">29</span><span>°C</span></h1>
+                <p class="cc"><span class="city">Dhaka</span>,<span class="country">BD</span></p>
+                <p id="weatherCondition">Cloudy</p>
+            </div>
+            <div class="container">
+                <div class="miniBox left">
+                    <div class="one">
+                        <p>Humidity</p>
+                        <p><img src="./img/humidity.png" alt="humidity"><span class="humidity">86%</span></p>
+                    </div>
+                    <div class="hl"></div>
+                    <div class="two">
+                        <p>Wind</p>
+                        <p><img src="./img/wind.png" alt="wind"><span class="wind">12 km/h</span></p>
+                    </div>
+                </div>
+                <div class="miniBox right">
+                    <div class="one">
+                        <p>Real feel</p>
+                        <p><img src="./img/maxMin.png" alt="pressure"><span id="realFeel">31°C</span></p>
+                    </div>
+                    <div class="hl"></div>
+                    <div class="two">
+                        <p>Pressure</p>
+                        <p><img src="./img/pressure.png" alt="pressure"><span class="pressure">0.99 atm</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="miniBox left">
+                    <div class="one">
+                        <p>Min/Max</p>
+                        <p><img src="./img/maxMin.png" alt="temp"><span class="min">23°C</span>/<span
+                                class="max">35°C</span></p>
+                    </div>
+                    <div class="hl"></div>
+                    <div class="two">
+                        <p>Visibility</p>
+                        <p><img src="./img/visi.png" alt="visi"><span class="visibility">10 km</span></p>
+                    </div>
+                </div>
+                <div class="miniBox right">
+                    <div class="one">
+                        <p>Sunrise</p>
+                        <p><img src="./img/rise.png" alt="sunrise"><span id="sunrise">05:18</span></p>
+                    </div>
+                    <div class="hl"></div>
+                    <div class="two">
+                        <p>Sunset</p>
+                        <p><img src="./img/set.png" alt="sunset"><span id="sunset">18:18</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
